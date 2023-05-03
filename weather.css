@@ -1,0 +1,29 @@
+.wea-div{
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    margin: 1rem 2.8rem;
+    gap: 2.5rem;
+   }
+
+   input{
+    height: 3rem;
+    width: 20rem;
+    box-sizing: border-box;
+    padding: 0 0.5rem;
+    text-align: center;
+   }
+
+   input[type="submit"]{
+    background: linear-gradient(rgb(166, 182, 166),rgb(235, 180, 180));
+   }
+
+   .my-text-clr{
+    color: rgb(240, 224, 7);
+    font-weight: 600;
+    font-size: 1.2rem;
+   }
+
+   .my-text-col{
+    color: coral;
+   }

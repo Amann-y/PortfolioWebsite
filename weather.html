@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Report</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="weather.css" />
+  </head>
+  <body>
+    <div class="wea-div">
+      <input
+        type="text"
+        placeholder="Enter A City"
+        class="inputValue"
+        required
+      />
+      <input type="submit" value="Enter" class="wea-btn" />
+    </div>
+
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-12 mx-auto">
+        <div class="flex flex-wrap -m-4">
+          <div class="p-4 md:w-1/3">
+            <div
+              class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+            >
+              <img
+                class="lg:h-48 md:h-36 w-full object-cover object-center"
+                src="images/weather.jpeg"
+                alt="blog"
+              />
+              <div class="p-6">
+                <h2
+                  class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1 country-name my-text-col"
+                >
+                  Country
+                </h2>
+                <h1
+                  class="title-font text-lg font-medium text-gray-900 mb-3 name my-text-col"
+                >
+                  City
+                </h1>
+                <h2 class="leading-relaxed mb-3 my-text-clr popula">
+                  Population of the city :
+                </h2>
+                <div class="flex items-center flex-wrap">
+                  <h2
+                    class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0 humidity my-text-clr"
+                  >
+                    Humidity is :
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/3">
+            <div
+              class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+            >
+              <img
+                class="lg:h-48 md:h-36 w-full object-cover object-center"
+                src="images/globe.jpg"
+                alt="blog"
+              />
+              <div class="p-6">
+                <h2
+                  class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1"
+                ></h2>
+                <h1
+                  class="title-font text-lg font-medium text-gray-900 mb-3 my-text-col"
+                >
+                  Weather Forecast
+                </h1>
+                <h2 class="leading-relaxed mb-3 my-text-clr pos landl">
+                  Possiblity of rain
+                </h2>
+                <div class="flex items-center flex-wrap">
+                  <h2
+                    class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0 my-text-clr windsp"
+                  >
+                    Wind Speed :
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/3">
+            <div
+              class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+            >
+              <img
+                class="lg:h-48 md:h-36 w-full object-cover object-center"
+                src="images/forec.jpg"
+                alt="blog"
+              />
+              <div class="p-6">
+                <h2
+                  class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1"
+                ></h2>
+                <h1
+                  class="title-font text-lg font-medium text-gray-900 mb-3 landl my-text-col"
+                >
+                  Longitude & Latitude
+                </h1>
+                <h2 class="leading-relaxed mb-3 my-text-clr temp">
+                  Temperature in Celsius & Fahrenheit
+                </h2>
+                <div class="flex items-center flex-wrap">
+                  <h2
+                    class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0 my-text-clr tempsec"
+                  ></h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="weather.js" ></script>
+  </body>
+</html>
